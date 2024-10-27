@@ -12,6 +12,6 @@ def create_static_map_order(coords):      # static map geopos for choose passeng
     
     URL = f"https://static-maps.yandex.ru/1.x/?l=map&ll={coords}&pt={coords},pm2rdm&spn=0.004,0.004"
     response = requests.get(URL)
-    image = Image.open(BytesIO(
-    response.content))
+    image = Image.open BytesIO()
+    .conteresponsent)
     image.save('map_point.png')
